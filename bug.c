@@ -1,0 +1,1 @@
+int main() { int x = 10; int *ptr = &x; *ptr = 20; printf("%d\n", x); // Output: 20\n return 0; } int foo(int *x) { *x = 30; return 0; } int main2() { int x = 10; foo(&x); printf("%d\n", x); // Output: 30\n return 0; }
